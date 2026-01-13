@@ -1,0 +1,145 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+animation: entrada 1s ease forwards;  
+}   
+
+    h1{text-align: center;
+    color: white;
+    margin: 2vh;
+    padding-top: 1vh;}
+
+.titulo {
+  font-size: 32px;      /* el tamaño que quieras */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  white-space: nowrap; /* 👈 evita que se parta */
+}
+
+
+        
+        
+
+    img{border-radius: 100%;
+    text-align: center;
+    width: 20vh;
+    margin: 2vh;
+    box-shadow:0px 10px 35px ;}
+
+    
+
+     .algo{ background: rgba(255,255,255,0.3);
+        margin-left: 36%;
+    margin-right: 10%;
+    margin-top: 4%;
+    height: 600px;
+    width: 400px;
+    border-radius: 6%;
+    border-color: rgba(255, 255, 255,0.3);
+    box-shadow: 0 20px 95px rgb(0, 0, 0);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    display: fixed;}
+
+     input{width: 350px;
+            height: 40px;
+            border-color: white;
+            border-radius: 9px;
+        }
+
+    .myButton {
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+    width: 300px;
+    height: 25px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.label{text-align: left; font-family: garamond;
+    padding-right: 73%;
+    color: white;
+    }
+
+.otro{text-align: left; font-family: garamond;
+    padding-right: 70%;
+    color: white;}
+
+    .password-box {
+  position: relative;
+  width: 100%;
+}
+
+/* Input */
+.password {
+  width: 300px;
+  height: 25px;
+  padding: 12px 42px 12px 12px; /* espacio para el ojo */
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Ocultar checkbox */
+#showPass {
+  display: none;
+}
+
+/* Ojo dentro del input */
+.eye {
+  position: absolute;
+  right: 32px;
+  top: 35%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.eye:hover {
+  opacity: 1;
+}
+
+/* Mostrar / ocultar */
+.password {
+  -webkit-text-security: disc;
+}
+
+#showPass:checked ~ .password {
+  -webkit-text-security: none;
+}
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
